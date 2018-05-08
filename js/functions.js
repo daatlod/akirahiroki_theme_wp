@@ -196,5 +196,13 @@
 
 		belowEntryMetaClass( 'img.size-full' );
 		belowEntryMetaClass( 'blockquote.alignleft, blockquote.alignright' );
+
+
+		/*custom*/
+
+		$('.menu_show').on('click', function(e){
+			e.preventDefault();		    
+		    $('.menu-site .menu-list').toggle("fast");
+		});
 	} );
 } )( jQuery );
